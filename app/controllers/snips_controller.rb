@@ -20,4 +20,10 @@ class SnipsController < ApplicationController
     @snip = Snip.all
   end
   
+  def edit
+    @snip = Snip.find(params[:id])
+  end
+  def update
+  end
+  
 end
