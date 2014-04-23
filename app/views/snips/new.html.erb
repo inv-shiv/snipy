@@ -9,9 +9,15 @@
       <div class="offer-content">
         <%= form_for @snip, :url => {:action => "create"} do |f| %>
             <%= f.text_area :snippet, class: "snippy-area", :rows=>15, :place_holder=> "Create a Snip...." %>
+            <div class="pull-left text-success">
+              <%=flash.notice%>
+            </div>
+            <div class="pull-left text-danger">
+              <%=flash.alert%>
+            </div>
             <div class="pull-right button-snipy">
               <%= f.submit "Submit", class: "btn btn-primary" %>
-              <%= f.submit "Clear", class: "btn btn-primary" %>
+              <%= f.submit "Clear", class: "btn btn-primary", :type => "reset"%>
             </div>
         <%end%>
       </div>
