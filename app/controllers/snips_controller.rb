@@ -11,7 +11,7 @@ class SnipsController < ApplicationController
       flash[:notice] = "Successfully saved at "+Time.now.to_s
       redirect_to(:action => "new")
     else
-      flash[:notice] = "Error while saving the Snip"
+      flash[:alert] = "Error while saving the Snip"
       render("new")
     end
   end
