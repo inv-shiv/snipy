@@ -1,4 +1,10 @@
 class SnipsController < ApplicationController
-  def index
+
+  def new
+    @snip = Snip.new
+  end
+
+  def create
+
   end
 end

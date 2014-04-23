@@ -1,0 +1,38 @@
+<div class="snipy">
+  <div class="col-lg-8">
+    <div class="offer offer-success">
+      <div class="shape">
+        <div class="shape-text">
+          Snipy
+        </div>
+      </div>
+      <div class="offer-content">
+        <%= form_for @snip, :url => {:action => "create"} do |f| %>
+            <%= f.text_area :snippet, class: "snippy-area", :rows=>15, :place_holder=> "Create a Snip...." %>
+            <div class="pull-right button-snipy">
+              <%= f.submit "Submit", class: "btn btn-primary" %>
+              <%= f.submit "Clear", class: "btn btn-primary" %>
+            </div>
+        <%end%>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="offer offer-success">
+      <div class="shape">
+        <div class="shape-text">
+          Snipes
+        </div>
+      </div>
+      <div class="offer-content">
+        <h3 class="lead">
+          Welcome user
+        </h3>
+        <p>
+          And a little description.
+          <br> and so on the recent pasties.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
