@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'snips#new'
   get 'snips/index'
-  resources :snips
+  resources :snips, :path
 
 
 
