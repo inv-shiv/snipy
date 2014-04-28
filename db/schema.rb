@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20140428065809) do
   create_table "snips", force: true do |t|
     t.string   "title"
     t.text     "snippet"
+    t.string   "category",   default: "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

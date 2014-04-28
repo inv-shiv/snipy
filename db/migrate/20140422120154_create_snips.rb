@@ -3,6 +3,7 @@ class CreateSnips < ActiveRecord::Migration
     create_table :snips do |t|
       t.string "title"
       t.text "snippet"
+      t.string "category", :default => "notes"
       t.timestamps
     end
   end

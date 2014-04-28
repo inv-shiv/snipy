@@ -17,6 +17,7 @@
                   <%=flash.alert%>
                 </div>
                 <div class="pull-right button-snipy">
+                  <%= f.select:category, options_for_select([['note'], ['snip']]),:prompt => "Select One" %>
                   <%= f.submit "Submit", class: "btn btn-primary" %>
                   <%= f.submit "Clear", class: "btn btn-primary", :type => "reset"%>
                 </div>
