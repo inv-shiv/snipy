@@ -5,11 +5,11 @@ class SnipsController < ApplicationController
   end
 
   def create
-    @snip = Snip.new(params.require(:snip).permit(:title, :snippet))
+    @snip = Snip.new(params.require(:snip).permit(:title, :snippet, :category))
     #@snip.permalink = ('a'..'z').to_a.shuffle[0,8].join
     if @snip.save
       flash[:notice] = "Successfully saved at "+Time.now.to_s
-      redirect_to(:action => "edit", :id=> @snip.id)
+      redirect_to(:action => "new")
     else
       flash[:alert] = "Error while saving the Snip"
       render("new")
