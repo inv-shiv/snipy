@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  root 'snips#new'
+  get 'sign_up' => "users#new", :as => "sign_up"
+
+  root 'users#new'
   get 'snips/index'
-  resources :snips, :path
-
-
+  resources :snips
+  resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

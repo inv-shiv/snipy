@@ -1,0 +1,47 @@
+
+<div class="snipy">
+
+  <div class="container">
+  <div class="row">
+
+    <%= form_for @user, :html => {:class => "col-md-4 go-right", :role => "form"} do |f| %>
+        <h4>Sign up page</h4>
+        To create an account on snipy you can use any of these social logins...<br><br>
+        <a href="/oauth/login-facebook.php" rel="nofollow">
+          <img src="/assets/f.png" class="i_fb" alt="" border="0">
+        </a> &nbsp;&nbsp;
+        <a href="/oauth/login-twitter.php" rel="nofollow">
+          <img src="/assets/t.png" class="i_fb" alt="" border="0">
+        </a> &nbsp;&nbsp;
+        <u>or</u> <br><br>fill out the form below.<br><br>
+        <% if @user.errors.any? %>
+            <div class="error_messages">
+                <h2>Form is invalid</h2>
+            <ul>
+              <% for message in @user.errors.full_messages %>
+              <li><%=message%></li>
+              <% end %>
+            </ul>
+            </div>
+        <% end %>
+
+        <div class="form-group">
+          <%= f.text_field :email, :class => "form-control" , :required => "true" %>
+          <%= f.label :email, :for => "email" %>
+        </div>
+        <div class="form-group">
+          <%= f.password_field :password, :class => "form-control", :required => "true" %>
+          <%= f.label :password, :for => "password" %>
+        </div>
+        <div class="form-group">
+          <%= f.password_field :password_confirmation, :class => "form-control" ,:required => "true" %>
+          <%= f.label :password_confirmation, :for=> "confirm password" %>
+        </div>
+        <div class="field field-submit">
+            <%= f.submit "Sign up" ,:class=> "btn btn-primary btn-lg" %>
+        </div>
+    <% end %>
+
+      </div>
+    </div>
+</div>
