@@ -15,6 +15,9 @@ input[disabled], textarea[disabled], input[readonly], textarea[readonly] {
     color: #9E9999;
 }
 
+.snip_form{
+	width:80%;
+}
 /* Footer */
 
 
