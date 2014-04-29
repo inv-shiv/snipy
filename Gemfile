@@ -42,3 +42,6 @@ gem 'bootstrap-sass', '~>3.1.1'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Use acts_as_taggable_on
+gem 'acts_as_taggable_on'
