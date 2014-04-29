@@ -16,6 +16,9 @@
                 <div class="pull-left text-danger">
                   <%=flash.alert%>
                 </div>
+                 <div class="pull-left text-danger">
+                  <%=f.text_field :tag_list%>
+                </div>
                 <div class="pull-right button-snipy">
                   <%= f.select:category, options_for_select([['note'], ['snip']]),:prompt => "Select One" %>
                   <%= f.submit "Submit", class: "btn btn-primary" %>

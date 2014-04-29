@@ -5,7 +5,7 @@ class SnipsController < ApplicationController
   end
 
   def create
-    @snip = Snip.new(params.require(:snip).permit(:title, :snippet, :category))
+    @snip = Snip.new(params.require(:snip).permit(:title, :snippet, :category, :tag_list))
     #@snip.permalink = ('a'..'z').to_a.shuffle[0,8].join
     if @snip.save
       flash[:notice] = "Successfully saved at "+Time.now.to_s
