@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .snipy {
     margin: 80px auto;
     width: 90%;
@@ -73,6 +74,7 @@ div {
     /* border: 1px solid #eeeeee; */
     padding-left: 20px;
     padding-top: 10px;
+    height: 700px;
   }
   &.bhoechie-tab div.bhoechie-tab-content:not(.active) {
     display: none;
