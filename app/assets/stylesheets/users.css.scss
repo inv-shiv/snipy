@@ -13,7 +13,7 @@
 }
 
 .register-user {
-  width: 320px;
+  width: 430px;
   margin: 20px;
   > div {
     position: relative;
@@ -45,9 +45,6 @@ input[type=password] {
 }
 
 .register-user {
-  input:valid, textarea:valid {
-    background: white;
-  }
   input:focus, textarea:focus {
     border-color: #357EBD;
   }
