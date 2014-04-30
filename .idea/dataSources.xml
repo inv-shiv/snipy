@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="281486415">
+  <component name="DataSourceManagerImpl" format="xml" hash="586299057">
     <data-source source="LOCAL" name="Rails snipy: development" uuid="cc31ff1f-86fd-4d4b-bf62-dbe86560d5bc">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails snipy: test" uuid="eb583896-d203-424b-a7d8-1ef6494797fa">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:snipy_test</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails snipy: production" uuid="4ad65c07-335f-4a2f-97a9-5d4da6268e78">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:snipy_production</jdbc-url>
       <libraries />
     </data-source>
   </component>

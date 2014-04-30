@@ -13,6 +13,7 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer',  platforms: :ruby
 
 gem 'bcrypt-ruby', '3.1.1.rc1', :require => 'bcrypt'
+gem 'omniauth'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

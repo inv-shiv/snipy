@@ -3,4 +3,10 @@
   <data-source source="LOCAL" name="Rails snipy: development" uuid="cc31ff1f-86fd-4d4b-bf62-dbe86560d5bc">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source source="LOCAL" name="Rails snipy: test" uuid="eb583896-d203-424b-a7d8-1ef6494797fa">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails snipy: production" uuid="4ad65c07-335f-4a2f-97a9-5d4da6268e78">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>
