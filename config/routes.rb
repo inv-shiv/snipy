@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
   get 'sign_up' => "users#new", :as => "sign_up"
+  get "login" => "sessions#new"
 
-  root 'users#new'
+  root 'sessions#new'
   get 'snips/index'
   resources :snips
   resources :users
-
+  resources :sessions
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -22,7 +23,7 @@ Rails.application.routes.draw do
   #   resources :products
 
   # Example resource route with options:
-  #   resources :products do
+  #   resources :products dodl
   #     member do
   #       get 'short'
   #       post 'toggle'

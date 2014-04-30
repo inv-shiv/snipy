@@ -1,9 +1,7 @@
 class User < ActiveRecord::Base
-  attr_accessor :password
-  before_save :encrypt_password
+  has_secure_password
+  #before_save :encrypt_password
 
-  validates_confirmation_of :password
-  validates_presence_of :password
   validates_uniqueness_of :email
 
   def encrypt_password

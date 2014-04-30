@@ -37,12 +37,14 @@
       </div>
       <div class="offer-content">
         <h3 class="lead">
-          Welcome User
+          <% if current_user %>
+              Logged in as <%= current_user.email %>
+              <%= link_to "Log out", session_path("current"), method: "delete" %>
         </h3>
-        <p>
-          And a little description.
-          <br> and so on the recent pasties.
-        </p>
+        <% else %>
+              <%= link_to "Sign up", new_user_path %>
+              <%= link_to "Log In", new_session_path %>
+        <% end %>
       </div>
     </div>
   </div>
